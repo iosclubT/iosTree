@@ -19,8 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-
+    } 
     @IBAction func calculateField(_ sender: Any) {
         let calculate1 = simpleCalculate()
         result.text = calculate1.calculate(loanAmount: Double(loanAmountField.text!)!, years:Int(loanTermField.text!)!, interestRate: Double(interestRateField.text!)!).description
